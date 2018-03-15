@@ -29,6 +29,11 @@ date_format: '%B %d, %Y'
 sass:
   style: compressed
 
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+
 defaults:
   -
     scope:
@@ -37,3 +42,11 @@ defaults:
     values:
       layout: post
       is_post: true
+  - scope:
+      path: _docs
+      type: docs
+    values:
+      layout: doc
+      is_doc: true
+      title: nong-program Documentation
+      subtitle: เอกสารสำหรับผู้เริ่มต้นเป็นแฟนๆน้องโปรแกรม

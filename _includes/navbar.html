@@ -24,7 +24,8 @@
   </nav>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
-      <a class="navbar-item {% if page.url == "/" %}is-active{% endif %}" href="{{ site.baseurl }}/">โพสต์ทั้งหมด</a>
+      <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl }}/">เอกสารหลัก</a>
+      <a class="navbar-item {% if page.is_post %}is-active{% endif %}" href="{{ site.baseurl }}/news">ข่าวสาร</a>
     </div>
     <div class="navbar-end">
       {% if site.navigation.github %}

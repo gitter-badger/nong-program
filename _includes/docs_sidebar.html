@@ -1,0 +1,16 @@
+<nav class="panel">
+  {% for item in site.data.docs %}
+    <p class="panel-heading">
+      {{ item.title }}
+    </p>
+    {% for sub-item in item.docs %}
+      {% assign url = item.url | prepend: "/docs/" | append: "/" | append: sub-item.url | append: "/" %}
+      <a href="{{ site.baseurl }}/{{ url }}" class="panel-block {% if page.permalink == url %}is-active{% endif %}">
+        <span class="panel-icon">
+          <i class="fas fa-book"></i>
+        </span>
+        {{ sub-item.title }}
+      </a>
+    {% endfor %}
+  {% endfor %}
+</nav>
