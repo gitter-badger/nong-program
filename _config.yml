@@ -1,12 +1,12 @@
 name: "nong-program"
-title: "บล็อกดีๆเพื่อแฟนๆของน้องโปรแกรม"
+title: "เว็บบล็อกเพื่อแฟนๆของน้องโปรแกรม"
 description: "เว็บบล็อกโดยแฟนๆของน้องโปรแกรม สำหรับผู้ที่หลงรักการเขียนโปรแกรม หรืออยากจะลองคบหาดูใจกับการเขียนโปรแกรมสักระยะ สามารถมีส่วนร่วมในการพัฒนาบทความเพื่อการเรียนรู้ไปกับเราได้"
-repository: "https://github.com/nakorndev/nong-program"
+repository: "https://github.com/ramut-group/nong-program"
 timezone: "Asia/Bangkok"
 lang: "th"
 email: "nakorndev@gmail.com"
 baseurl: "/nong-program"
-url: "https://nakorndev.github.io"
+url: "https://ramut-group.github.io"
 
 markdown: kramdown
 theme: jekyll-bulma-theme
@@ -19,7 +19,7 @@ version:
   font-awesome: 5.0.8
 
 navigation:
-  github: nakorndev/nong-program
+  github: ramut-group/nong-program
   facebook: 777742965747869
 
 paginate: 5
