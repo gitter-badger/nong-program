@@ -25,7 +25,8 @@
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
       <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/' }}">เอกสารหลัก</a>
-      <a class="navbar-item {% if page.is_post %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">ข่าวสาร</a>
+      <a class="navbar-item {% if page.is_news %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">ข่าวสาร</a>
+      <a class="navbar-item {% if page.is_awesome %}is-active{% endif %}" href="{{ site.baseurl | append: '/awesome' }}">ข้อมูลที่มีประโยชน์</a>
     </div>
     <div class="navbar-end">
       {% if site.navigation.github %}

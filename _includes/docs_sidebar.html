@@ -1,18 +1,24 @@
 <nav class="panel">
   <p class="panel-heading">
-    เอกสารหลัก
+    หน้าแรก
   </p>
   <a href="{{ site.baseurl | append: '/' }}" class="panel-block {% if page.url == '/' %}is-active{% endif %}">
     <span class="panel-icon">
-      <i class="fas fa-home"></i>
+      <i class="fas fa-bookmark"></i>
     </span>
-    หน้าแรก
+    เอกสารหลัก
   </a>
   <a href="{{ site.baseurl | append: '/news' }}" class="panel-block">
     <span class="panel-icon">
-      <i class="fas fa-star"></i>
+      <i class="far fa-newspaper"></i>
     </span>
     ข่าวสาร
+  </a>
+  <a href="{{ site.baseurl | append: '/awesome' }}" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-star"></i>
+    </span>
+    ข้อมูลที่มีประโยชน์
   </a>
   {% for item in site.data.docs %}
     <p class="panel-heading">

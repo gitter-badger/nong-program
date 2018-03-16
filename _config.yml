@@ -34,7 +34,10 @@ collections:
     permalink: "/docs/:path/"
     output: true
   news:
-    permalink: "/:collection/:year/:month/:day/:title"
+    permalink: "/news/:year/:month/:day/:title"
+    output: true
+  awesome:
+    permalink: "/awesome/:path/"
     output: true
 
 defaults:
@@ -46,14 +49,14 @@ defaults:
       layout: post
       is_post: true
       title: nong-program Posts
-      subtitle: โพสต์ของน้อง
+      subtitle: โพสต์ของน้องโปรแกรม
   - scope:
       path: _docs
       type: docs
     values:
       layout: doc
       is_doc: true
-      title: nong-program Documentation
+      title: Documentation
       subtitle: เอกสารสำหรับผู้เริ่มต้นเป็นแฟนๆน้องโปรแกรม
   - scope:
       path: _news
@@ -61,5 +64,13 @@ defaults:
     values:
       layout: news
       is_news: true
-      title: nong-program News
+      title: News
       subtitle: ข่าวสารที่เกี่ยวข้องกับน้องโปรแกรม
+  - scope:
+      path: _awesome
+      type: awesome
+    values:
+      layout: awesome
+      is_awesome: true
+      title: Awesome
+      subtitle: รวมข้อมูลดีๆที่ต้องน้องยังร้อง "AWESOME!"
