@@ -1,0 +1,13 @@
+- title: การเริ่มต้นเป็นแฟนของน้องโปรแกรม
+  url: getting-started
+  docs:
+  - title: ทำไมต้องน้องโปรแกรม?
+    url: why-nong-program
+  - title: อุปกรณ์ที่ควรมี
+    url: hardware
+
+- title: ทักษะคอมพิวเตอร์พื้นฐาน
+  url: computer-basic
+  docs:
+  - title: บทนำ
+    url: home
