@@ -1,11 +1,26 @@
 <nav class="panel">
+  <p class="panel-heading">
+    เอกสารหลัก
+  </p>
+  <a href="{{ site.baseurl | append: '/' }}" class="panel-block {% if page.url == '/' %}is-active{% endif %}">
+    <span class="panel-icon">
+      <i class="fas fa-home"></i>
+    </span>
+    หน้าแรก
+  </a>
+  <a href="{{ site.baseurl | append: '/news' }}" class="panel-block">
+    <span class="panel-icon">
+      <i class="fas fa-star"></i>
+    </span>
+    ข่าวสาร
+  </a>
   {% for item in site.data.docs %}
     <p class="panel-heading">
       {{ item.title }}
     </p>
     {% for sub-item in item.docs %}
       {% assign url = item.url | prepend: "/docs/" | append: "/" | append: sub-item.url | append: "/" %}
-      <a href="{{ site.baseurl }}/{{ url }}" class="panel-block {% if page.permalink == url %}is-active{% endif %}">
+      <a href="{{ url | prepend: site.baseurl }}" class="panel-block {% if page.url == url %}is-active{% endif %}">
         <span class="panel-icon">
           <i class="fas fa-book"></i>
         </span>

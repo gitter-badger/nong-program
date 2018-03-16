@@ -31,7 +31,10 @@ sass:
 
 collections:
   docs:
-    permalink: "/:collection/:path/"
+    permalink: "/docs/:path/"
+    output: true
+  news:
+    permalink: "/:collection/:year/:month/:day/:title"
     output: true
 
 defaults:
@@ -42,6 +45,8 @@ defaults:
     values:
       layout: post
       is_post: true
+      title: nong-program Posts
+      subtitle: โพสต์ของน้อง
   - scope:
       path: _docs
       type: docs
@@ -50,3 +55,11 @@ defaults:
       is_doc: true
       title: nong-program Documentation
       subtitle: เอกสารสำหรับผู้เริ่มต้นเป็นแฟนๆน้องโปรแกรม
+  - scope:
+      path: _news
+      type: news
+    values:
+      layout: news
+      is_news: true
+      title: nong-program News
+      subtitle: ข่าวสารที่เกี่ยวข้องกับน้องโปรแกรม
