@@ -1,6 +1,6 @@
 <div class="container">
   <nav class="navbar-brand">
-    <a class="navbar-item" href="{{ site.baseurl }}/">{{ site.name }}</a>
+    <a class="navbar-item {% if page.is_home %}is-active{% endif %}" href="{{ site.baseurl | append: '/'}}">{{ site.name }}</a>
     {% if site.navigation.github %}
       <a class="navbar-item is-hidden-desktop text-github" target="_blank" href="https://github.com/{{ site.navigation.github }}">
         <i class="fab fa-lg fa-github"></i>
@@ -24,7 +24,7 @@
   </nav>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
-      <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/' }}">เอกสารหลัก</a>
+      <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/docs/getting-started/introduction' }}">เรียนกับน้องโปรแกรม</a>
       <a class="navbar-item {% if page.is_news %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">ข่าวสาร</a>
       <a class="navbar-item {% if page.is_awesome %}is-active{% endif %}" href="{{ site.baseurl | append: '/awesome' }}">ข้อมูลที่มีประโยชน์</a>
     </div>

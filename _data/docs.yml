@@ -1,15 +1,11 @@
 - title: การเริ่มต้นเป็นแฟนของน้องโปรแกรม
-  url: /
+  url: getting-started
   docs:
   - title: ทำไมต้องน้องโปรแกรม?
-    url: why-nong-program
-  - title: วิธีเริ่มต้นการเขียนโปรแกรมง่ายๆ
-    url: how-to-get-started
-  - title: คอมพิวเตอร์เบื้องต้น
-    url: basic-computing
+    url: introduction
 
-- title: ทักษะคอมพิวเตอร์พื้นฐาน
+- title: คอมพิวเตอร์พื้นฐาน
   url: computer-basic
   docs:
   - title: บทนำ
-    url: home
+    url: introduction
