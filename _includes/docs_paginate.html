@@ -1,0 +1,45 @@
+{% assign heads = site.data.docs | map: 'url' | spilt: ',' %}
+
+{% for head in heads %}
+
+  {% assign docs = site.data.docs[forloop.index0] | map: 'docs' | map: 'url' | join: ',' | split: ',' %}
+  {% for document in docs %}
+
+    {% assign document_url = document | prepend: '/' | prepend: head | prepend:"/docs/" | append:"/" %}
+
+    {% if document_url == page.url %}
+      <nav class="has-text-centered">
+        {% if forloop.first and forloop.parentloop.first %}
+          <a class="button is-dark" disabled>< ก่อนหน้า</a>
+        {% else %}
+          {% if forloop.first %}
+            {% assign previous = forloop.parentloop.index0 | minus: 1 %}
+            {% assign previous_docs = site.data.docs[previous].docs | map: 'url' | spilt: ',' | last %}
+            {% assign previous_head = site.data.docs[previous].url %}
+            {% assign previous_page = previous_docs | prepend: '/' | prepend: previous_head | prepend:"/docs/" | append:"/" %}
+          {% else %}
+            {% assign previous = forloop.index0 | minus: 1 %}
+            {% assign previous_page = docs[previous] | prepend: '/' | prepend: head | prepend:"/docs/" | append:"/" %}
+          {% endif %}
+          <a class="button is-dark" href="{{ site.baseurl | append: previous_page }}">< ก่อนหน้า</a>
+        {% endif %}
+        {% if forloop.last and forloop.parentloop.last %}
+          <a class="button is-dark" disabled>ถัดไป ></a>
+        {% else %}
+          {% if forloop.last %}
+            {% assign next = forloop.parentloop.index0 | plus: 1 %}
+            {% assign next_docs = site.data.docs[next].docs[0].url %}
+            {% assign next_head = site.data.docs[next].url %}
+            {% assign next_page = next_docs | prepend: '/' | prepend: next_head | prepend:"/docs/" | append:"/" %}
+          {% else %}
+            {% assign next = forloop.index0 | plus: 1 %}
+            {% assign next_page = docs[next] | prepend: '/' | prepend: head | prepend:"/docs/" | append:"/" %}
+          {% endif %}
+          <a class="button is-dark" href="{{ site.baseurl | append: next_page }}">ถัดไป ></a>
+        {% endif %}
+      </nav>
+    {% endif %}
+
+  {% endfor %}
+
+{% endfor %}

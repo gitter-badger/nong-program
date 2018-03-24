@@ -3,6 +3,8 @@
   docs:
   - title: ทำไมต้องน้องโปรแกรม?
     url: introduction
+  - title: test
+    url: how-to-get-started
 
 - title: คอมพิวเตอร์พื้นฐาน
   url: computer-basic
