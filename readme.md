@@ -109,6 +109,7 @@ $ bundle exec jekyll serve
   github: # ID GitHub (ไม่จำเป็น)
   facebook: # ID Facebook (ไม่จำเป็น)
   twitter: # ID Twitter (ไม่จำเป็น)
+  penname: # ชื่อเพื่อแสดงผลชื่อผู้ใช้หรือนามปากกาที่คุณใช้เป็นหลัก
 ```
 
 > Gravatar จะต้องใช้ Email ที่ได้รับการ Hash MD5 สามารถใช้ http://www.md5online.org/md5-encrypt.html และใช้ URL เป็น `https://www.gravatar.com/avatar/yourMD5Hashed`

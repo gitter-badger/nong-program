@@ -42,3 +42,25 @@ $link: #3273dc;
 .mb-4 {
   margin-bottom: 40px;
 }
+
+.content h1 {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.promote-button {
+  padding: 1.5rem 0;
+}
+
+img.emojione {
+  font-size: inherit;
+  height: 3ex;
+  width: 3ex;
+  min-height: 20px;
+  min-width: 20px;
+  display: inline-block;
+  margin: -.4ex 0 0;
+  line-height: normal;
+  vertical-align: middle;
+}

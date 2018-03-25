@@ -1,10 +1,8 @@
 - title: การเริ่มต้นเป็นแฟนของน้องโปรแกรม
   url: getting-started
   docs:
-  - title: ทำไมต้องน้องโปรแกรม?
+  - title: บทนำโดยน้องโปรแกรม
     url: introduction
-  - title: test
-    url: how-to-get-started
 
 - title: คอมพิวเตอร์พื้นฐาน
   url: computer-basic
