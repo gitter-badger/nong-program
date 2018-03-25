@@ -10,6 +10,7 @@ url: "https://ramut-group.github.io"
 
 markdown: kramdown
 theme: jekyll-bulma-theme
+remote_theme: ramut-group/jekyll-bulma-theme
 plugins:
   - jekyll-feed
   - jekyll-paginate
