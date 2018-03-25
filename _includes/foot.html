@@ -1,0 +1,8 @@
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded",function(){
+    var contents = document.getElementsByClassName('content');
+    Array.from(contents).forEach(element => {
+      element.innerHTML = emojione.toImage(element.innerHTML);
+    });
+  });
+</script>

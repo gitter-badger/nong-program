@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+
+$link: #3273dc;
+
+%prompt-font {
+  font-family: 'Prompt',BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+%origin-font {
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  a.navbar-item.is-active:not(:hover), a.navbar-item.is-active, a.navbar-link.is-active, a.navbar-link.is-active:not(:hover) {
+    background-color: $link;
+    color: white;
+  }
+}
+
+.prompt {
+  &.is-heading {
+    font-size: 2.5rem;
+    @extend %prompt-font;
+    &::before {
+      content: '#';
+      color: $link;
+      @extend %origin-font;
+    }
+  }
+  .title {
+    @extend %prompt-font;
+  }
+  .subtitle {
+    padding-top: 20px;
+  }
+}
+
+.mb-3 {
+  margin-bottom: 30px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.content h1 {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.promote-button {
+  padding: 1.5rem 0;
+}
+
+img.emojione {
+  font-size: inherit;
+  height: 3ex;
+  width: 3ex;
+  min-height: 20px;
+  min-width: 20px;
+  display: inline-block;
+  margin: -.4ex 0 0;
+  line-height: normal;
+  vertical-align: middle;
+}
