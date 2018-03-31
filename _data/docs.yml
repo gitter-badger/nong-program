@@ -3,6 +3,8 @@
   docs:
   - title: บทนำโดยน้องโปรแกรม
     url: introduction
+  - title: การรายงานปัญหาบนเอกสาร
+    url: issues
 
 - title: คอมพิวเตอร์พื้นฐาน
   url: computer-basic

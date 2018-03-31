@@ -58,7 +58,7 @@ defaults:
       layout: doc
       is_doc: true
       title: Documentation
-      subtitle: เอกสารสำหรับผู้เริ่มต้นเป็นแฟนๆน้องโปรแกรม
+      subtitle: เอกสารการเรียนรู้กับน้องโปรแกรม
   - scope:
       path: _news
       type: news
