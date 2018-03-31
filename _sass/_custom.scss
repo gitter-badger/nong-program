@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Prompt');
-
 $link: #3273dc;
-
-%prompt-font {
-  font-family: 'Prompt',BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-%origin-font {
-  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
 
 @media screen and (min-width: 1024px) {
   a.navbar-item.is-active:not(:hover), a.navbar-item.is-active, a.navbar-link.is-active, a.navbar-link.is-active:not(:hover) {
@@ -20,15 +10,15 @@ $link: #3273dc;
 .prompt {
   &.is-heading {
     font-size: 2.5rem;
-    @extend %prompt-font;
     &::before {
       content: '#';
       color: $link;
-      @extend %origin-font;
     }
   }
   .title {
-    @extend %prompt-font;
+    &.emojione {
+      font-size: 1rem;
+    }
   }
   .subtitle {
     padding-top: 20px;
@@ -50,7 +40,7 @@ $link: #3273dc;
 }
 
 .promote-button {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 2.5rem;
 }
 
 img.emojione {
@@ -58,9 +48,15 @@ img.emojione {
   height: 3ex;
   width: 3ex;
   min-height: 20px;
+  max-height: 32px;
   min-width: 20px;
+  max-width: 32px;
   display: inline-block;
   margin: -.4ex 0 0;
   line-height: normal;
   vertical-align: middle;
+}
+
+.is-justify-center {
+  justify-content: center;
 }
