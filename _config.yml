@@ -1,16 +1,16 @@
 name: "nong-program"
 title: "เว็บบล็อกเพื่อแฟนๆของน้องโปรแกรม"
 description: "เว็บบล็อกโดยแฟนๆของน้องโปรแกรม สำหรับผู้ที่หลงรักการเขียนโปรแกรม หรืออยากจะลองคบหาดูใจกับการเขียนโปรแกรมสักระยะ สามารถมีส่วนร่วมในการพัฒนาบทความเพื่อการเรียนรู้ไปกับเราได้"
-repository: "https://github.com/ramut-group/nong-program"
+repository: "https://github.com/anitation/nong-program"
 timezone: "Asia/Bangkok"
 lang: "th"
 email: "nakorndev@gmail.com"
 baseurl: "/nong-program"
-url: "https://ramut-group.github.io"
+url: "https://anitation.github.io"
 
 markdown: kramdown
 theme: jekyll-bulma-theme
-remote_theme: ramut-group/jekyll-bulma-theme
+remote_theme: anitation/jekyll-bulma-theme
 plugins:
   - jekyll-feed
   - jekyll-paginate
@@ -20,7 +20,7 @@ version:
   font-awesome: 5.0.8
 
 navigation:
-  github: ramut-group/nong-program
+  github: anitation/nong-program
   facebook: 777742965747869
 
 paginate: 5
@@ -58,7 +58,7 @@ defaults:
       layout: doc
       is_doc: true
       title: Documentation
-      subtitle: เอกสารสำหรับผู้เริ่มต้นเป็นแฟนๆน้องโปรแกรม
+      subtitle: เอกสารการเรียนรู้กับน้องโปรแกรม
   - scope:
       path: _news
       type: news
