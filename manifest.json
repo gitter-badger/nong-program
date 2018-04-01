@@ -1,0 +1,14 @@
+{
+  "lang": "th",
+  "background_color": "#3273dc",
+  "name": "เว็บบล็อกจากน้องโปรแกรม",
+  "short_name": "Nong Program",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/images/menifest.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ]
+}
