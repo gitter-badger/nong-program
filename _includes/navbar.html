@@ -27,6 +27,9 @@
       <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/docs/getting-started/introduction' }}">เรียนกับน้องโปรแกรม</a>
       <a class="navbar-item {% if page.is_news %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">ข่าวสาร</a>
       <a class="navbar-item {% if page.is_awesome %}is-active{% endif %}" href="{{ site.baseurl | append: '/awesome' }}">ข้อมูลที่มีประโยชน์</a>
+      <div class="is-hidden-desktop docs-nav-menu">
+        {% include docs_sidebar.html %}
+      </div>
     </div>
     <div class="navbar-end">
       {% if site.navigation.github %}
