@@ -70,7 +70,7 @@ img.emojione {
     text-align: center;
     padding-bottom: 5px;
   }
-  img {
+  img:not(.emojione) {
     display: block;
     margin: 0 auto;
     padding-top: 10px;
@@ -83,4 +83,14 @@ img.emojione {
     padding-top: 10px;
     border-top: 1px solid #eaeaea;
   }
+}
+
+.text-patreon {
+  color: #f96854;
+}
+
+.button.is-patreon {
+  background: #f96854;
+  color: white;
+  border: 0;
 }
