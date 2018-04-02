@@ -146,6 +146,10 @@ bundle exec jekyll serve
 
 โดยเนื้อหาทั้งหมดจะอยู่บน `_docs` เป็นหลัก ซึ่งดูตัวอย่างไฟล์ที่มีอยู่แล้วได้ จะได้เขียนได้ตรงรูปแบบกัน
 
+### Markdown Lint
+
+กรุณาใช้ [DavidAnson/vscode-markdownlint](https://github.com/DavidAnson/vscode-markdownlint) สำหรับบน Visual Studio Code เพื่อให้สามารถเปิดใช้งาน Lint และตรวจสอบปัญหาของ Syntax ได้
+
 ### ชื่อ File
 
 กรุณาตั้งชื่อไฟล์และโฟลเดอร์ที่สอดคล้องกับหัวข้อของคุณ ซึ่งเมื่อตั้งเสร็จให้กรุณาทำการตั้งค่าบน `data/docs.yml` เพื่อเลือกตำแหน่งของเอกสารที่ถูกต้องด้วย
@@ -186,6 +190,6 @@ HTML นั้นเราไม่ได้ห้ามใช้บน Markdown
 
 เนื่องจาก Jekyll ไม่ได้ฉลาดเหมือน GitHub ทำให้ Markdown ไม่ได้เปลี่ยนให้ [https://www.google.com](https://www.google.com) เป็นลิงก์โดยอัตโนมัติ ดังนั้นรบกวนใส่เพิ่มเป็น `[https://www.google.com](https://www.google.com)`
 
-### Markdown Lint
+### การใช้ List
 
-กรุณาใช้ [DavidAnson/vscode-markdownlint](https://github.com/DavidAnson/vscode-markdownlint) สำหรับบน Visual Studio Code เพื่อให้สามารถเปิดใช้งาน Lint และตรวจสอบปัญหาของ Syntax ได้
+กรุณาใช้เครื่องหมาย `-` แทนการใช้ `*` เนื่องจากเราจะใช้การอ้างอิงภาษาบ่อยครั้งที่จำเป็นต้องใช้ Bold `**text**` ในการแสดงผล จึงมักทำให้เครื่องหมายซ้ำกันเลยเลี่ยงมาใช้ขีดแทน
