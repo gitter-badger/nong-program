@@ -10,7 +10,7 @@
 
 ## วิธีการใช้สำหรับผู้พัฒนา
 
-เราใช้ [Jekyll](jekyllrb.com) และ [GitHub Pages](https://pages.github.com) ในการเขียนบล็อกขึ้นมา เพื่อให้รองรับการแก้ไขจากผู้อื่น และยังเป็นการเขียนบทความที่เหมาะแก่โปรแกรมเมอร์อย่างมากด้วยการใช้ `Markdown` หรือ `HTML` ในการเขียนเนื้อหา ดังนั้นการใช้งานจึงควรมีพื้นฐานการใช้งาน `Jekyll` ด้วย
+เราใช้ [Jekyll](jekyllrb.com) และ [GitHub Pages](https://pages.github.com) ในการเขียนบล็อกขึ้นมา เพื่อให้รองรับการแก้ไขจากผู้อื่น และยังเป็นการเขียนบทความที่เหมาะแก่โปรแกรมเมอร์อย่างมากด้วยการใช้ Markdown หรือ HTML ในการเขียนเนื้อหา ดังนั้นการใช้งานจึงควรมีพื้นฐานการใช้งาน **Jekyll** ด้วย
 
 > ศึกษาเพิ่มเติมได้ที่ [https://jekyllrb.com/docs/quickstart/](https://jekyllrb.com/docs/quickstart/)
 
@@ -77,7 +77,7 @@ bundle exec jekyll serve
 
 | Directory | Meaning | Usage | Permit |
 | --- | --- | --- | --- |
-| `/_awesome/` | Awesome Pages | สำหรับเก็บ Awesome Lists โดย ramut และบุคคลที่สนใจลงลิงก์ที่มีประโยชน์ | Edit only |
+| `/_awesome/` | Awesome Pages | สำหรับเก็บ Awesome Lists และบุคคลที่สนใจลงลิงก์ที่มีประโยชน์ | Edit only |
 | `/_data/` | Global YAML data | สำหรับเก็บข้อมูลและตัวแปร ที่จำเป็นนำมาใช้กับบล็อก | Read only |
 | `/_docs/` | Documentation Pages | สำหรับเก็บ Documentation หลักโดย URL จะถูกเรียกเป็น `/docs/:path/` และบังคับให้ `.md` เป็นหลัก โดยใช้ชื่อไฟล์เป็นภาษาอังกฤษเท่านั้น และต้องมีความหมายตรงกับเนื้อหา | Full access |
 | `/_includes/` | Components | สำหรับใช้งานเป็น Components ที่ถูกเรียกใช้งานในหน้าอื่นๆผ่าน `{% include filename.html %}` | Read only |
@@ -103,7 +103,7 @@ bundle exec jekyll serve
 - realname_th: # ชื่อจริง เป็นภาษาไทย ไม่ต้องมีคำนำหน้า
   realname_en: # ชื่อจริง เป็นภาษาอังกฤษ ไม่ต้องมีคำนำหน้า
   penname: # ชื่อเล่นของคุณหรือนามปากกา โดยเราแนะนำให้ใช้คำว่า "พี"่ นำหน้าด้วย และไม่ควรซ้ำกับผู้อื่น
-  title: # งานหรืออะไรบางอย่างที่บ่งบอก
+  title: # งานหรืออะไรบางอย่างที่บ่งบอกถึงตัวคุณเอง
   quote: # พื้นที่สำหรับอธิบายความรู้สึกที่มีต่อโครงการน้องโปรแกรม
   image: # ที่อยู่รูปภาพของ Avatar เป็นรูปแบบพร้อม http:// หรือ https:// ที่ถูกต้อง (แนะนำให้ใช้ Gravatar ตามตัวอย่างบนไฟล์)
   github: # ID GitHub (ไม่จำเป็น)
@@ -112,6 +112,8 @@ bundle exec jekyll serve
 ```
 
 > Gravatar จะต้องใช้ Email ที่ได้รับการ Hash MD5 สามารถใช้ [http://www.md5online.org/md5-encrypt.html](http://www.md5online.org/md5-encrypt.html) และใช้ URL เป็น `https://www.gravatar.com/avatar/yourMD5Hashed`
+>
+> และหลายๆข้อมูลของ Contributors ในตอนนี้เรายังไม่ได้นำมาใช้ แต่เก็บไว้เผื่อใช้ในอนาคต
 
 #### `data/docs.yml`
 
@@ -144,6 +146,10 @@ bundle exec jekyll serve
 
 โดยเนื้อหาทั้งหมดจะอยู่บน `_docs` เป็นหลัก ซึ่งดูตัวอย่างไฟล์ที่มีอยู่แล้วได้ จะได้เขียนได้ตรงรูปแบบกัน
 
+### Markdown Lint
+
+กรุณาใช้ [DavidAnson/vscode-markdownlint](https://github.com/DavidAnson/vscode-markdownlint) สำหรับบน Visual Studio Code เพื่อให้สามารถเปิดใช้งาน Lint และตรวจสอบปัญหาของ Syntax ได้
+
 ### ชื่อ File
 
 กรุณาตั้งชื่อไฟล์และโฟลเดอร์ที่สอดคล้องกับหัวข้อของคุณ ซึ่งเมื่อตั้งเสร็จให้กรุณาทำการตั้งค่าบน `data/docs.yml` เพื่อเลือกตำแหน่งของเอกสารที่ถูกต้องด้วย
@@ -161,11 +167,20 @@ bundle exec jekyll serve
 
 ### การใช้รูปภาพ
 
-การใช้รูปภาพที่จะใส่ลงบน Markdown กรุณาเก็บไว้บน Directory `assets` และอนุญาตทุก Format ที่เป็นรูปภาพ เพื่อให้ง่ายต่อการจัดการ โดยแบ่งเป็น Sub-directory ไว้ตามชื่อของ Documents ที่เกี่ยวข้องด้วย หากไม่ทราบว่าควรไว้อย่างไรสามารถเก็บไว้บน Root directory ก่อนได้ แล้วทางเราจะมาจัดเก็บให้เป็นระเบียบอีกที
+การใช้รูปภาพที่จะใส่ลงบน Markdown กรุณาเก็บไว้บน Directory `assets/images` และอนุญาตทุก Format ที่เป็นรูปภาพ เพื่อให้ง่ายต่อการจัดการ โดยแบ่งเป็น Sub-directory ไว้ตามชื่อของ Documents ที่เกี่ยวข้องด้วย หากไม่ทราบว่าควรไว้อย่างไรสามารถเก็บไว้บน Root directory ก่อนได้ แล้วทางเราจะมาจัดเก็บให้เป็นระเบียบอีกที
+
+ซึ่งการใช้ Markdown จะต้องเชื่อมโยงด้วยการใช้โค้ดตัวอย่างต่อไปนี้
+
+```markdown
+![My image]({{ 'path/to/img.jpg' | absolute_url }})
+*My describe*
+```
+
+เพื่อให้รูปแบบของรูปภาพถูกจัดแสดงอย่างถูกต้อง และถูกตาม CSS ที่เราได้จัดรูปแบบไว้ สามารถดูตัวอย่างได้ที่ [/_docs/getting-started/advice.md](/_docs/getting-started/advice.md)
 
 ### การใช้วิดีโอ
 
-สำหรับการใช้วิดีโอ ขอให้ทำการ Embed code จากภายนอกมาโดยทางเราแนะนำให้เป็น YouTube เป็นหลัก และสามารถใช้ HTML ลงบน Markdown ได้เลย
+สำหรับการใช้วิดีโอ ขอให้ทำการ Embed code จากภายนอกมาแทนที่จะเก็บลงบน git เพราะพื้นที่จะเต็มเร็วมากขึ้น โดยทางเราแนะนำให้เป็น YouTube เป็นหลัก และสามารถใช้ HTML ลงบน Markdown ได้เลย
 
 ### การใช้ HTML
 
@@ -175,6 +190,6 @@ HTML นั้นเราไม่ได้ห้ามใช้บน Markdown
 
 เนื่องจาก Jekyll ไม่ได้ฉลาดเหมือน GitHub ทำให้ Markdown ไม่ได้เปลี่ยนให้ [https://www.google.com](https://www.google.com) เป็นลิงก์โดยอัตโนมัติ ดังนั้นรบกวนใส่เพิ่มเป็น `[https://www.google.com](https://www.google.com)`
 
-### Markdown Lint
+### การใช้ List
 
-กรุณาใช้ [DavidAnson/vscode-markdownlint](https://github.com/DavidAnson/vscode-markdownlint) สำหรับบน Visual Studio Code เพื่อให้สามารถเปิดใช้งาน Lint และตรวจสอบปัญหาของ Syntax ได้
+กรุณาใช้เครื่องหมาย `-` แทนการใช้ `*` เนื่องจากเราจะใช้การอ้างอิงภาษาบ่อยครั้งที่จำเป็นต้องใช้ Bold `**text**` ในการแสดงผล จึงมักทำให้เครื่องหมายซ้ำกันเลยเลี่ยงมาใช้ขีดแทน

@@ -61,8 +61,20 @@ img.emojione {
   justify-content: center;
 }
 
-.content ul {
-  margin-top: 0;
+.content {
+  ul {
+    margin-top: 0;
+  }
+  img + em {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  img:not(.emojione) {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
 }
 
 .docs-nav-menu {
@@ -71,4 +83,14 @@ img.emojione {
     padding-top: 10px;
     border-top: 1px solid #eaeaea;
   }
+}
+
+.text-patreon {
+  color: #f96854;
+}
+
+.button.is-patreon {
+  background: #f96854;
+  color: white;
+  border: 0;
 }
