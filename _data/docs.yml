@@ -4,8 +4,8 @@
   - title: เชิญรับชมวิดีโอก่อนเริ่มเรียน
     url: introduction
 
-- title: Git
-  url: git
+- title: เครื่องมือสำหรับโปรแกรมเมอร์
+  url: tools
   docs:
-  - title: ทำไมต้องใช้ Git
-    url: why-git
+  - title: Git
+    url: git
