@@ -1,15 +1,11 @@
 - title: เริ่มเรียนรู้ไปกับเรา!
   url: getting-started
   docs:
-  - title: บทนำโดยน้องโปรแกรม
+  - title: เชิญรับชมวิดีโอก่อนเริ่มเรียน
     url: introduction
-  - title: การรายงานปัญหาบนเอกสาร
-    url: issues
-  - title: คำแนะนำ
-    url: advices
 
-- title: คอมพิวเตอร์พื้นฐาน
-  url: computer-basic
+- title: เครื่องมือสำหรับโปรแกรมเมอร์
+  url: tools
   docs:
-  - title: บทนำ
-    url: introduction
+  - title: Git
+    url: git

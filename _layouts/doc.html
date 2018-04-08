@@ -6,6 +6,30 @@ layout: default
   <div class="container">
     <div class="columns">
       <div class="column is-9-widescreen is-8-desktop is-8-tablet is-12-mobile">
+        {% if page.duration and page.level %}
+          <div class="field is-grouped is-grouped-multiline">
+            <div class="control">
+              <div class="tags has-addons">
+                <span class="tag is-medium is-dark">
+                  ระดับ
+                </span>
+                <span class="tag is-medium is-info">
+                  {{ page.level }}
+                </span>
+              </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons">
+                <span class="tag is-medium is-dark">
+                  ใช้เวลาเรียน
+                </span>
+                <span class="tag is-medium is-primary">
+                  {{ page.duration }} นาที
+                </span>
+              </div>
+            </div>
+          </div>
+        {% endif %}
         <div class="content">
           {{ content }}
         </div>
