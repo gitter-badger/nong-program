@@ -29,7 +29,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-bulma-theme (1.0.11)
+    jekyll-bulma-theme (1.0.12)
       jekyll (~> 3.7)
     jekyll-feed (0.9.3)
       jekyll (~> 3.3)

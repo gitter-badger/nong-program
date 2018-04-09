@@ -10,6 +10,9 @@
           <a href="{{ url | prepend: site.baseurl }}" {% if page.url == url %}class="is-active"{% endif %}>
             {{ sub-item.title }}
           </a>
+          {% if page.url == url %}
+            <ul class="sub-docs"></ul>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>

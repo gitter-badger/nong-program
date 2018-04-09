@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
   document.addEventListener("DOMContentLoaded",function(){
     var contents = document.getElementsByClassName('content');
     Array.from(contents).forEach(element => {
@@ -10,6 +10,15 @@
       if (links[i].hostname != window.location.hostname) {
         links[i].target = '_blank';
         links[i].className += ' externalLink';
+      }
+    }
+
+    var docs = document.getElementById('docs');
+    if (docs) {
+      for (var subDocs of document.getElementsByClassName('sub-docs')) {
+        for (var h2 of docs.getElementsByTagName('h2')) {
+          subDocs.innerHTML += `<li><a href="#${h2.id}">${h2.innerText.substring(3)}</a></li>`;
+        }
       }
     }
   });
