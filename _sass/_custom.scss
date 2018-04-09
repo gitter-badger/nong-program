@@ -65,6 +65,9 @@ img.emojione {
   ul {
     margin-top: 0;
   }
+  li {
+    word-wrap: break-word;
+  }
   img + em {
     display: block;
     text-align: center;

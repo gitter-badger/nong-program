@@ -16,9 +16,6 @@
         <i class="fab fa-lg fa-facebook"></i>
       </a>
     {% endif %}
-    <a class="navbar-item is-hidden-desktop text-patreon" target="_blank" href="https://www.patreon.com/bePatron?c=1655061">
-      <span class="icon"><i class="fab fa-lg fa-patreon"></i></span>
-    </a>
     <div id="navbarBurger" class="navbar-burger" data-target="navMenu">
       <span></span>
       <span></span>
@@ -27,6 +24,10 @@
   </nav>
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-start">
+      <a class="navbar-item is-hidden-desktop text-patreon" target="_blank" href="https://www.patreon.com/bePatron?c=1655061">
+        <span class="icon"><i class="fab fa-patreon"></i></span>
+        <span>สนับสนุนเรา</span>
+      </a>
       <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/docs/getting-started/introduction' }}">เรียนกับน้องโปรแกรม</a>
       <a class="navbar-item {% if page.is_news %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">ข่าวสาร</a>
       <a class="navbar-item {% if page.is_awesome %}is-active{% endif %}" href="{{ site.baseurl | append: '/awesome' }}">ข้อมูลที่มีประโยชน์</a>
