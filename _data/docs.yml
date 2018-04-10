@@ -9,3 +9,5 @@
   docs:
   - title: Git
     url: git
+  - title: Editor
+    url: editor

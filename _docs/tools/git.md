@@ -1,7 +1,7 @@
 ---
 title: Git
 subtitle: คือจุดเริ่มต้นของการเป็น <strong>โปรแกรมเมอร์</strong>
-duration: 60
+duration: 90
 level: ปานกลาง
 ---
 
@@ -259,4 +259,3 @@ git --version
 - [https://learngitbranching.js.org/](https://learngitbranching.js.org/)
 - [https://www.tutorialspoint.com/git/index.htm](https://www.tutorialspoint.com/git/index.htm)
 - [https://en.wikipedia.org/wiki/Git](https://en.wikipedia.org/wiki/Git)
-- [https://th.wikipedia.org/wiki/กิต_(ซอฟต์แวร์)](https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B4%E0%B8%95_(%E0%B8%8B%E0%B8%AD%E0%B8%9F%E0%B8%95%E0%B9%8C%E0%B9%81%E0%B8%A7%E0%B8%A3%E0%B9%8C))
