@@ -28,9 +28,37 @@
         <span class="icon"><i class="fab fa-patreon"></i></span>
         <span>สนับสนุนเรา</span>
       </a>
-      <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/docs/getting-started/introduction' }}">เรียนกับน้องโปรแกรม</a>
-      <a class="navbar-item {% if page.is_news %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">ข่าวสาร</a>
-      <a class="navbar-item {% if page.is_awesome %}is-active{% endif %}" href="{{ site.baseurl | append: '/awesome' }}">ข้อมูลที่มีประโยชน์</a>
+      <a class="navbar-item {% if page.is_doc %}is-active{% endif %}" href="{{ site.baseurl | append: '/docs/getting-started/introduction' }}">
+        🎓 เรียนกับน้องโปรแกรม
+      </a>
+      <a class="navbar-item {% if page.is_news %}is-active{% endif %}" href="{{ site.baseurl | append: '/news' }}">
+        📰 ข่าวสาร
+      </a>
+      <!-- <a class="navbar-item {% if page.is_awesome %}is-active{% endif %}" href="{{ site.baseurl | append: '/awesome' }}">ข้อมูลที่มีประโยชน์</a> -->
+      <div class="navbar-item has-dropdown is-hoverable">
+        <div class="navbar-link">
+          เพิ่มเติม
+        </div>
+        <div id="moreDropdown" class="navbar-dropdown is-boxed">
+          <a class="navbar-item " href="#">
+            <div class="media">
+              <div class="media-left">
+                <span class="icon is-large has-text-success">
+                  <span class="fas fa-2x fa-certificate"></span>
+                </span>
+              </div>
+              <div class="media-content">
+                <p>
+                  <strong>Awesome</strong>
+                  <br>
+                  <small>รวมข้อมูลที่น่าสนใจสำหรับ Programmer</small>
+                </p>
+              </div>
+            </div>
+          </a>
+          <hr class="navbar-divider">
+        </div>
+      </div>
       <div class="is-hidden-desktop docs-nav-menu">
         {% include docs_sidebar.html %}
       </div>

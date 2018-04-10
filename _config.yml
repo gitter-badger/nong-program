@@ -42,8 +42,7 @@ collections:
     output: true
 
 defaults:
-  -
-    scope:
+  - scope:
       path: _posts
       type: posts
     values:
